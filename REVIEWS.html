@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+      padding-top: 80px;
+      font-family: 'Arial Black'
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #FB9E3A;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+      .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: white;
+      left: 0;
+      bottom: -6px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      transform: translateY(-3px);
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+
+    /* CIRCLE IMAGE ICONS */
+    .nav-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 70%;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    .icon-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+:root{
+  --accent:#FB9E3A;
+  --dark:#1a1a1a;
+  --glass:rgba(255,255,255,0.25);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#FFE08F;
+  color:var(--dark);
+}
+
+/* SECTION */
+.contact{
+  padding:90px 8%;
+}
+
+/* GRID */
+.container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+}
+
+/* GLASS CARD */
+.card{
+  background:var(--glass);
+  backdrop-filter: blur(12px);
+  border-radius:24px;
+  padding:45px;
+  border:1px solid rgba(255,255,255,0.4);
+  transition:.4s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 60px rgba(0,0,0,.15);
+}
+
+/* LEFT */
+.tag{
+  font-size:12px;
+  letter-spacing:3px;
+  font-weight:600;
+  color:var(--accent);
+}
+
+h2{
+  font-size:44px;
+  margin:12px 0 20px;
+}
+
+.info p{
+  opacity:.85;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+.info ul{
+  list-style:none;
+}
+
+.info li{
+  margin-bottom:14px;
+  font-size:15px;
+}
+
+/* SOCIAL */
+.socials span{
+  display:block;
+  margin:35px 0 12px;
+  font-weight:600;
+}
+
+.socials a{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  background:#1877F2;
+  color:#fff;
+  border-radius:50%;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.socials a:hover{
+  transform:scale(1.15);
+}
+
+/* RIGHT */
+h3{
+  font-size:30px;
+  margin-bottom:8px;
+}
+
+.form p{
+  opacity:.8;
+  margin-bottom:30px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+}
+
+.row{
+  display:flex;
+  gap:18px;
+}
+
+/* INPUTS */
+input,textarea{
+  background:rgba(255,255,255,.85);
+  border:none;
+  border-radius:14px;
+  padding:16px 18px;
+  margin-bottom:18px;
+  outline:none;
+  transition:.3s;
+  font-size:14px;
+}
+
+input:focus,textarea:focus{
+  box-shadow:0 0 0 2px var(--accent);
+}
+
+textarea{
+  min-height:130px;
+  resize:none;
+}
+
+/* BUTTON */
+button{
+  margin-top:10px;
+  width:190px;
+  padding:14px;
+  border:none;
+  border-radius:40px;
+  background:linear-gradient(135deg,#FB9E3A,#ffb865);
+  color:#000;
+  font-weight:600;
+  cursor:pointer;
+  transition:.35s;
+}
+
+button:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .container{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">IHMCI</div>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/PROGRAMS%202.html">Projects</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/BUILDINGS.html">Services</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/REVIEWS.html">Reviews</a>
+    </div>
+
+    <!-- CIRCULAR IMAGE ICONS -->
+    <div class="nav-icons">
+      <div class="icon-circle">
+        <img src="Bagong Pinas.png" alt="">
+      </div>
+      <div class="icon-circle">
+        <img src="Santol.png" alt="">
+      </div>
+    </div>
+  </div>
+
+<section class="contact">
+  <div class="container">
+
+    <!-- LEFT -->
+    <div class="card info" data-aos="fade-right">
+      <span class="tag">KEEP CLOSE</span>
+      <h2>Get in Touch</h2>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/BUILDINGS.html" class="back-link">← Back to Home</a>
+
+      <p>
+        Reach out to us for inquiries, concerns, or feedback. 
+        We’d love to hear from you.
+      </p>
+
+      <ul>
+        <li>📍 60 Silencio Street, Santol, District IV, Quezon City</li>
+        <li>📞 8713-1928</li>
+        <li>⏰ 8:00 AM – 5:00 PM</li>
+        <li>✉ barangaysantol2023@gmail.com</li>
+      </ul>
+
+      <div class="socials">
+        <span>Follow Us</span>
+        <a href="https://www.facebook.com/profile.php?id=61578939367600" target="_blank">f</a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="card form" data-aos="fade-left">
+      <h3>Your Details</h3>
+      <p>Let us know and hear from you.</p>
+
+      <form id="contactForm">
+        <div class="row">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Comments / Questions" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({duration:1200,once:true});
+
+document.getElementById("contactForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  alert("✅ Thank you! Your message has been sent.");
+  e.target.reset();
+});
+</script>
+
+</body>
+</html>

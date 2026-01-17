@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beem Credit Union</title>
+
+
+<section class="leader-section">
+  <div class="side-image image-left">
+    <img src="S1.png" alt="Barangay Captain">
+  </div>
+
+  <div class="content-center">
+    <span class="badge-blue">Barangay Captain</span>
+    <h1>Hon. Anacleto C. De Torres</h1>
+    <p>Leading our community with <u>integrity</u>, <u>transparency</u>, and <u>dedication</u>. Together, we continue to grow and protect our barangay for every family.</p>
+  </div>
+</section>
+
+<section class="kagawad-marquee">
+  <h2 class="section-title">The Sangguniang Barangay Members</h2>
+  <div class="marquee-viewport">
+    <div class="marquee-track">
+      
+      <div class="council-card"><div class="circle kag-1"></div><h3>Kag. Ramoncito M. Medina</h3><p>Health Committee</p></div>
+      <div class="council-card"><div class="circle kag-2"></div><h3>Kag. Raquel G. Pangilagan</h3><p>Education</p></div>
+      <div class="council-card"><div class="circle kag-3"></div><h3>Kag. Bilibert N. Juson</h3><p>Security</p></div>
+      <div class="council-card"><div class="circle kag-4"></div><h3>Kag. Maricone L. Borja</h3><p>Infrastructure</p></div>
+      <div class="council-card"><div class="circle kag-5"></div><h3>Kag. Edmundo T. Cruz</h3><p>Finance</p></div>
+      <div class="council-card"><div class="circle kag-6"></div><h3>Kag. Danilo Y. Sakay</h3><p>Environment</p></div>
+      <div class="council-card"><div class="circle kag-7"></div><h3>Kag. Julieta T. Perez</h3><p>Livelihood</p></div>
+
+      <div class="council-card"><div class="circle kag-1"></div><h3>Kag. Name 1</h3><p>Health Committee</p></div>
+      <div class="council-card"><div class="circle kag-2"></div><h3>Kag. Name 2</h3><p>Education</p></div>
+      <div class="council-card"><div class="circle kag-3"></div><h3>Kag. Name 3</h3><p>Security</p></div>
+      <div class="council-card"><div class="circle kag-4"></div><h3>Kag. Name 4</h3><p>Infrastructure</p></div>
+      <div class="council-card"><div class="circle kag-5"></div><h3>Kag. Name 5</h3><p>Finance</p></div>
+      <div class="council-card"><div class="circle kag-6"></div><h3>Kag. Name 6</h3><p>Environment</p></div>
+      <div class="council-card"><div class="circle kag-7"></div><h3>Kag. Name 7</h3><p>Livelihood</p></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="support-council">
+  <div class="support-grid">
+    <div class="support-card">
+      <div class="photo-square member-sec"></div> <h4>Secretary</h4>
+      <p>Jofre A. Doguran</p>
+    </div>
+    <div class="support-card">
+      <div class="photo-square member-treas"></div> <h4>Treasurer</h4>
+      <p>Rosanna C. Progueras</p>
+    </div>
+    <div class="support-card">
+      <div class="photo-square member-sk"></div> <h4>SK Chairperson</h4>
+      <p>Christine Jewel D. Dacillo</p>
+    </div>
+  </div>
+</section>
+
+
+<style>/* General Space between sections */
+section { margin-bottom: 100px; font-family: sans-serif; }
+
+/* Captain Section Styles */
+.leader-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px;
+}
+
+.badge-blue {
+  background-color: #EA2F14;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.side-image {
+  background: #FB9E3A;
+  padding: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transform: rotate(-3deg);
+}
+
+.side-image img { width: 350px; display: block; }
+
+/* Marquee Styles */
+.section-title { text-align: center; font-size: 32px; margin-bottom: 40px; }
+
+.marquee-viewport { overflow: hidden; width: 100%; }
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.council-card {
+  width: 220px;
+  text-align: center;
+  background: #E6521F;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  /* Soft shadow for depth */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+/* Add your photo links here */
+.kag-1 { background-image: url('S2.png'); }
+.kag-2 { background-image: url('S3.png'); }
+.kag-3 { background-image: url('S4.png'); }
+.kag-4 { background-image: url('S5.png'); }
+.kag-5 { background-image: url('S6.png'); }
+.kag-6 { background-image: url('S7.png'); }
+.kag-7 { background-image: url('S8.png'); }
+/* ... and so on for all 7 */
+
+/* Support Grid Styles */
+.support-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.support-card {
+  background: #FCEF91;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Styling for the square photo boxes */
+.photo-square {
+  width: 100%;
+  aspect-ratio: 1; /* Keeps it a perfect square */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow instead of border */
+}
+
+/* Putting the actual images here */
+.member-sec { background-image: url('S10.png'); }
+.member-treas { background-image: url('S11.png'); }
+.member-sk { background-image: url('S9.png'); }
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
+</body>
+</html>

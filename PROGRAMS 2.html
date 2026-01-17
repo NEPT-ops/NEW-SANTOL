@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barangay Programs</title>
+
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'General Sans', sans-serif;
+    }
+    body {
+      overflow-x: hidden;
+      padding-top: 80px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #FB9E3A;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+      .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: white;
+      left: 0;
+      bottom: -6px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      transform: translateY(-3px);
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+
+    /* CIRCLE IMAGE ICONS */
+    .nav-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 70%;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    .icon-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+    body {
+      background: #F6EFE6;
+      color: #2b2b2b;
+      overflow-x: hidden;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    .hero {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 6% 60px;
+      position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 50px;
+      padding-top:0px;
+      max-width: 850px;
+    }
+
+    .hero-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      border-radius: 30px;
+      z-index: -1;
+      border: 3px solid rgba(230, 184, 92, 0.4);
+      box-shadow: 20px 20px 60px rgba(224, 122, 63, 0.15);
+      transform: rotate(-2deg);
+      animation: fadeUp 1s ease backwards;
+    }
+
+    .hero-content::after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 100%;
+      height: 100%;
+      background: rgba(176, 48, 48, 0.07);
+      border-radius: 30px;
+      z-index: -2;
+      transform: rotate(1deg);
+      animation: fadeUp 1.2s ease backwards;
+    }
+
+    .overline {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: #E07A3F;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      animation: fadeDown 0.7s ease 0.3s backwards;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #B03030;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      animation: fadeDown 0.9s ease 0.4s backwards;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 1.15rem;
+      color: #555;
+      line-height: 1.6;
+      animation: fadeDown 1.1s ease 0.5s backwards;
+    }
+
+    .hero-decoration {
+      position: absolute;
+      top: -200px;
+      left: -200px;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(230,184,92,0.15) 0%, rgba(246,239,230,0) 70%);
+      z-index: 1;
+      pointer-events: none;
+      animation: pageFade 2s ease;
+    }
+
+    .programs {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      padding: 0 6%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 24px;
+      height: 440px;
+      border-top: 5px solid #E6B85C;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: cardFadeUp 0.8s ease forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.8s; }
+    .card:nth-child(2) { animation-delay: 0.95s; }
+    .card:nth-child(3) { animation-delay: 1.1s; }
+    .card:nth-child(4) { animation-delay: 1.25s; }
+
+    .card:hover {
+      transform: translateY(-6px);
+      transition: transform 0.3s ease;
+    }
+
+    .card span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: #E07A3F;
+    }
+
+    .card h3 {
+      margin-top: 12px;
+      font-size: 1.4rem;
+      color: #B03030;
+      letter-spacing: -0.3px;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .card button {
+      margin-top: 18px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 999px;
+      background: #E6B85C;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+      font-family: 'General Sans', sans-serif;
+    }
+
+    .card button:hover {
+      background: #E07A3F;
+      transform: translateY(-2px);
+    }
+
+    .curve {
+      position: absolute;
+      bottom: -70px;
+      left: -40px;
+      width: 150%;
+      height: 200px;
+      background: #E6B85C;
+      border-radius: 50%;
+      opacity: 0.45;
+    }
+
+    footer {
+      margin-top: 100px;
+      padding: 25px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      animation: fadeUp 1s ease 1.5s backwards;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    @keyframes pageFade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes cardFadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+          padding: 60px 4%;
+      }
+      .hero-content {
+        padding: 30px 20px;
+      }
+      .hero h1 {
+          font-size: 2.5rem;
+      }
+      .hero-decoration {
+          top: -100px;
+          left: -100px;
+          width: 500px;
+          height: 500px;
+      }
+      .card {
+        height: auto;
+        padding-bottom: 80px;
+      }
+    }
+    footer {
+    text-align: center;
+    background-color: #2b2b2b;
+    color: #E8E8E8;
+}
+
+#FBaranggay {
+    padding: 0px;
+    margin: 0px;
+}
+
+#Santol {
+    padding: 0px;
+    margin: 0px;
+}
+
+#loc {
+    padding: 0px;
+    margin: 0px;
+    font-size: 17px
+}
+
+#desc {
+    font-size: 13px
+}
+
+.icons {
+    height: 30px
+}
+  </style>
+</head>
+<body>
+<header>
+    <div class="navbar">
+    <div class="logo">IHMCI</div>
+
+    <div class="nav-links">
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/HOME.html#">Home</a>
+      <a href="#">Projects</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/BUILDINGS.html">Services</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/REVIEWS.html   ">Reviews</a>
+    </div>
+
+    <!-- CIRCULAR IMAGE ICONS -->
+    <div class="nav-icons">
+      <div class="icon-circle">
+        <img src="Bagong Pinas.png" alt="">
+      </div>
+      <div class="icon-circle">
+        <img src="Santol.png" alt="">
+      </div>
+    </div>
+  </div>
+</header>
+  <section class="hero">
+    <div class="hero-decoration"></div>
+
+    <div class="hero-content">
+        <span class="overline">OFFICIAL BARANGAY PROJECTS</span>
+        <h1>Mga PROYEKTO</h1>
+        <p>mission we commit to engaging the community of learners into inner directed globally competent vincentian leaders who journey with persons living in poverty situtions and care for Gods creation boom</p>
+    </div>
+  </section>
+
+  <div class="programs">
+    <div class="card">
+      <span>EDUKASYON</span>
+      <h3>Sample Program Title</h3>
+      <p>vision immaculate heart of mary college inc is an empowering christ centered vincentian learning insitution</p>
+      <a href="View Details.html" class="file:///C:/Users/Paul/OneDrive/Desktop/Programs/Programs.html#">
+  <button class="custom-btn">View Details</button>
+</a>
+      <div class="curve"></div>
+    </div>
+
+    <div class="card">
+      <span>SERBISYO</span>
+      <h3>Placeholder</h3>
+      <p>Core values respect simplicity service vincentian excellence</p>
+     <a href="View Details.html" class="file:///C:/Users/Paul/OneDrive/Desktop/Programs/Programs.html#">
+  <button class="custom-btn">View Details</button>
+</a>
+      <div class="curve"></div>
+    </div>
+
+    <div class="card">
+      <span>HOSPITALITY</span>
+      <h3>Community Service</h3>
+      <p>graduation attributes christ centered charitable competent </p>
+     <a href="View Details.html" class="file:///C:/Users/Paul/OneDrive/Desktop/Programs/Programs.html#">
+  <button class="custom-btn">View Details</button>
+</a>
+      <div class="curve"></div>
+    </div>
+    
+  </div>
+
+    <footer>
+          <div width="60%">
+              <h2 id="Santol">Barangay Santol</h2>
+              <p id="loc">Quezon City, Metro Manila, Philippines</p>
+              <hr width="80%" />
+              <p id="desc">
+                  Barangay Santol is a community where neighbors know each other and work together to keep the area safe and peaceful.<br />
+                  It’s a great neighborhood filled with friendly people, helpful leaders, and a strong sense of unity. In this barangay,
+                  everyone contributes<br /> to making the place clean, organized, and welcoming for families and visitors. It’s a community<br />
+                  where cooperation and care make daily life better for everyone.
+              </p>
+
+          </div>
+          <a href="https://www.facebook.com/profile.php?id=61578939367600#"><img src="Fb.png" alt="Facebook Page" class="icons" /></a>
+          <a href=""><img src="IG.png" alt="Instagram Page" class="icons" /></a>
+          <a href=""><img src="Contact.png" alt="Contact No." class="icons" /></a>
+      </footer>
+
+</body>
+</html>

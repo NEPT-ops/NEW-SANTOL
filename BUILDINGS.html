@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFICES</title>
+    <link rel="stylesheet" href="BUILDING.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+    <div class="logo">IHMCI</div>
+
+    <div class="nav-links">
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/HOME.html">Home</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/PROGRAMS%202.html">Projects</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/BUILDINGS.html">Services</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/REVIEWS.html">Reviews</a>
+    </div>
+
+    <!-- CIRCULAR IMAGE ICONS -->
+    <div class="nav-icons">
+      <div class="icon-circle">
+        <img src="Bagong Pinas.png" alt="">
+      </div>
+      <div class="icon-circle">
+        <img src="Santol.png" alt="">
+      </div>
+    </div>
+  </div></header>
+<section class="locations-section">
+    <div class="header-container">
+        <div>
+            <span >
+                <h1>OFFICES/BUILDINGS</h1>
+            <p class="subtitle">Official offices and public service buildings.</p>
+            </span>
+        
+
+    <div class="cards-grid">
+        <div class="location-card">
+            <div class="image-box" style="background-image: url('BRNGY.jpg');"></div>
+            <div class="info-content">
+                <h3>Barangay Hall</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book. It has survived not 
+                      only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged.</p>
+            </div>
+<a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/details.html"class="btn-order"><button class="btn-order">View Details</button></a>
+        </div>
+
+        <div class="location-card">
+            <div class="image-box" style="background-image: url('SCHOOL.png');"></div>
+            <div class="info-content">
+                <h3>School</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book. It has survived not 
+                      only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged.</p>
+            </div>
+<a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/details.html"class="btn-order"><button class="btn-order">View Details</button></a>
+        </div>
+
+        <div class="location-card">
+            <div class="image-box" style="background-image: url('DRR.png');"></div>
+            <div class="info-content">
+                <h3>DRR(Disaster Risk Reduction)</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book. It has survived not 
+                      only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged.</p>
+            </div>
+            <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/details.html"class="btn-order"><button class="btn-order">View Details</button></a>        
+        </div>
+    </div>
+</section>
+<footer>
+        <div width="60%">
+            <h2 id="Santol">Barangay Santol</h2>
+            <p id="loc">Quezon City, Metro Manila, Philippines</p>
+            <hr width="80%" />
+            <p id="desc">
+                Barangay Santol is a community where neighbors know each other and work together to keep the area safe and peaceful.<br />
+                It’s a great neighborhood filled with friendly people, helpful leaders, and a strong sense of unity. In this barangay,
+                everyone contributes<br /> to making the place clean, organized, and welcoming for families and visitors. It’s a community<br />
+                where cooperation and care make daily life better for everyone.
+            </p>
+
+        </div>
+        <a href="https://www.facebook.com/profile.php?id=61578939367600#"><img src="Fb.png" alt="Facebook Page" class="icons" /></a>
+        <a href=""><img src="IG.png" alt="Instagram Page" class="icons" /></a>
+        <a href=""><img src="Contact.png" alt="Contact No." class="icons" /></a>
+    </footer>
+
+
+<style>    
+    body {
+      overflow-x: hidden;
+      padding-top: 80px;
+      font-family: Arial;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 95%;
+      height: 35px;
+      background-color: #FB9E3A;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+      .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: white;
+      left: 0;
+      bottom: -6px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      transform: translateY(-3px);
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+
+    /* CIRCLE IMAGE ICONS */
+    .nav-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 70%;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    .icon-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+    background-color: #FEF3E2; /* The red from your image */
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+
+@keyframes PROJECT {
+    from{
+        transform:translateX(0) :
+    }
+    to{
+        transform:translateX(20px) ;
+    }
+}
+.locations-section {
+    padding: 50px 5%;
+    padding-top:10px;
+    animation-name: PROJECT;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    color: #B03030;
+}
+
+h1 { font-size: 3rem; margin: 0; letter-spacing: -1px; }
+.subtitle { font-size: 1.5rem; margin: 0; font-weight: normal; }
+
+.btn-all {
+    background-color: #f9ca24;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 30px;
+    margin-top:50px;    
+    justify-content: center;
+}
+
+.location-card {
+    background: white;
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.image-box {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-content {
+    padding: 20px;
+    flex-grow: 1;
+    color: #333;
+}
+.info-content p{
+    font-size:12px;
+}
+
+.info-content h3 { margin-top: 0; color: #d63031; border-bottom: 2px solid #eee; padding-bottom: 5px;}
+
+.btn-order {
+    background-color: #E6B85C; 
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    background-color: #e7ab32;
+}
+footer {
+    text-align: center;
+    background-color: #2b2b2b;
+    color: #E8E8E8;
+}
+
+#FBaranggay {
+    padding: 0px;
+    margin: 0px;
+}
+
+#Santol {
+    padding: 0px;
+    margin: 0px;
+}
+
+#loc {
+    padding: 0px;
+    margin: 0px;
+    font-size: 17px
+}
+
+#desc {
+    font-size: 13px
+}
+
+.icons {
+    height: 30px
+}
+</style>
+
+</body>
+</html>

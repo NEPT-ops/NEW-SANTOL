@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beem Credit Union</title>
+
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'General Sans', sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+      padding-top: 80px;
+      
+      font-family: 'General Sans', sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #FB9E3A;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+      .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: white;
+      left: 0;
+      bottom: -6px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      transform: translateY(-3px);
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+
+    /* CIRCLE IMAGE ICONS */
+    .nav-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 70%;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    .icon-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+    /* HERO SECTION */
+    .hero {
+      background-color: #FB9E3A;
+      height: 90vh;
+      display: flex;
+      position: relative;
+    }
+
+    .hero-text {
+      width: 55%;
+      padding: 90px 60px;
+      color: #E6521F;
+      animation: fadeLeft 1.2s ease;
+    }
+
+    .hero-text h1 {
+      font-size: 90px;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+
+    .hero-text button {
+      background-color: white;
+      color: #333;
+      padding: 14px 30px;
+      border-radius: 30px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      transform: scale(1.05);
+    }
+
+    /* TRIANGLE IMAGE */
+    .triangle-image {
+      width: 45%;
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+      animation: fadeRight 1.5s ease;
+    }
+
+    .triangle-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeRight {
+      from {
+        opacity: 0;
+        transform: translateX(60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-text {
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 60px;
+      }
+
+      .triangle-image {
+        width: 100%;
+        height: 300px;
+        clip-path: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">IHMCI</div>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/PROGRAMS%202.html">Projects</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/BUILDINGS.html">Services</a>
+      <a href="file:///C:/Users/LANI%20E.%20SAKAY/Documents/BARANGAY/REVIEWS.html">Reviews</a>
+    </div>
+
+    <!-- CIRCULAR IMAGE ICONS -->
+    <div class="nav-icons">
+      <div class="icon-circle">
+        <img src="Bagong Pinas.png" alt="">
+      </div>
+      <div class="icon-circle">
+        <img src="Santol.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Barangay<br>Santol</h1>
+      <p>
+        QUEZON CITY, DISTRICT IV
+      </p>
+    </div>
+
+    <!-- TRIANGLE IMAGE -->
+    <div class="triangle-image">
+      <img src="BRNGY.jpg" alt="">
+    </div>
+  </section>
+
+  <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden; 
+}
+
+/* MAIN CONTAINER */
+.members {
+  background: #8f3fd8;
+  border-radius: 18px;
+  padding: 80px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  overflow: hidden;
+  animation: fadeUp 1s ease;
+}
+
+/* LEFT CONTENT */
+.members-text {
+  width: 50%;
+}
+
+.members-text h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #E6521F;
+}
+
+.members-text p {
+  font-size: 16px;
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.members-text button {
+  background: white;
+  color: #333;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.members-text button:hover {
+  transform: scale(1.05);
+}
+
+/* WRAPPER FOR BOX SECTION */
+.members-wrapper {
+  background: #f5f5f5;
+  padding: 80px 40px; /* space around the box */
+}
+
+/* BOX ITSELF */
+.members {
+  max-width: 1200px;  /* controls width */
+  margin: 0 auto;     /* centers it */
+  background: #FB9E3A;
+  border-radius: 18px;
+  padding: 80px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+
+/* RIGHT SIDE */
+.members-visual {
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeRight 1.3s ease;
+}
+
+/* ABSTRACT SHAPE */
+.abstract-shape {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #FCEF91;
+  border-radius: 50%;
+  clip-path: polygon(
+    50% 0%, 70% 20%, 100% 50%, 
+    70% 80%, 50% 100%, 
+    30% 80%, 0% 50%, 30% 20%
+  );
+  z-index: 1;
+}
+
+/* OVAL IMAGE */
+.oval-image {
+  width: 260px;
+  height: 360px;
+  border-radius: 130px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.oval-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FLOATING TAG */
+.floating-tag {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  background: white;
+  color: #333;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  width: 220px;
+  animation: float 4s ease-in-out infinite;
+  z-index: 3;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  position: absolute;
+  bottom: 20px;
+  right: -40px;
+  background: white;
+  color: #333;
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  width: 200px;
+  animation: float 4s ease-in-out infinite reverse;
+  z-index: 3;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .members {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .members-text, .members-visual {
+    width: 100%;
+  }
+
+  .members-visual {
+    margin-top: 60px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="members-wrapper">
+  <div class="members">
+
+  <!-- LEFT -->
+  <div class="members-text">
+    <h1>Location</h1>
+    <p>
+      Barangay Santol is bounded on the north by Barangay Imelda, to the east by Barangay Imelda, 
+      to the southeast and southwest by part of Manila areas and to the west and northwest by Barangay Sto. Niño.
+      Barangay Santol is one of the Seven (7) barangay's in Area 22, District 4, Quezon City. Its total land area
+       is about 43.6847 hectares and it has 19 areas. Boundary: North: Bayani Steet Aurora Boulevard South: 
+       G. Araneta Avenue East : West : Santol Street and Quezon City, Boundary
+    </p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="members-visual">
+
+    <div class="abstract-shape"></div>
+
+    <div class="oval-image">
+      <img src="7.jpg" alt="">
+    </div>
+
+    <div class="floating-tag">
+      ✱ 43.6847 hectares
+    </div>
+
+    <div class="testimonial">
+      Area 22, District 4
+    </div>
+
+  </div>
+
+</section>
+<section class="testimonial-section">
+  <div class="header-row">
+    <h1>Events</h1>
+  </div>
+
+  <div class="marquee-viewport">
+    <div class="marquee-track">
+      <div class="testimonial-card card-1"></div>
+      <div class="testimonial-card card-2"></div>
+      <div class="testimonial-card card-3"></div>
+      <div class="testimonial-card card-4"></div>
+      
+      <div class="testimonial-card card-1"></div>
+      <div class="testimonial-card card-2"></div>
+      <div class="testimonial-card card-3"></div>
+      <div class="testimonial-card card-4"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+./* Container that hides the overflow */
+.marquee-viewport {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* The moving track */
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* Ensures the track is as wide as all images combined */
+  animation: scroll 20s linear infinite;
+}
+
+/* Pause animation on hover so people can read */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.testimonial-card {
+  min-width: 300px; /* Adjust based on your image size */
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  background-color: white;
+}
+
+/* Define the scrolling movement */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Moves the track left by exactly half its width */
+    transform: translateX(calc(-50% - 10px)); 
+  }
+}
+
+/* Rest of the styling (Header/Button) */
+.testimonial-section { padding: 50px; background-color: #FB9E3A; font-family: sans-serif; overflow-x: hidden; }
+.header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.header-row h1 { font-size: 48px; margin: 0; }
+.btn-reviews { background: #E6521F; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; }
+
+/* Placeholder colors if you don't have images yet */
+.card-1, .card-3 { background-color: #ddd; }
+.card-2, .card-4 { background-color: #eee; }
+
+.card-1 { background-image: url('1.jpg'); }
+.card-2 { background-image: url('2.jpg'); }
+.card-3 { background-image: url('3.jpg'); }
+.card-4 { background-image: url('4.jpg'); }
+</style>
+
+
+<section class="about-section reveal-up">
+  <div class="side-image image-left">
+    <img src="P2.png" alt="Happy Clients">
+  </div>
+
+  <div class="content-center">
+    <h1>Achievements</h1>
+    
+    <p>Attended the flag ceremony at the Quezon City Hall where our barangay was recognized with a Plaque of Appreciation
+         for our Anti-Drug efforts. Thank you very much honorable Mayor Joy Belmonte and Vice Mayor Gian Sotto 
+         for the recognition, and Station 11 Col. Dela Cruz. Your trust and appreciation truly inspire us to continue
+          serving with dedication.</p>
+  </div>
+
+  <div class="side-image image-right">
+    <img src="P1.png" alt="Team working">
+  </div>
+</section>
+
+<style>
+/* Adding space between the sections */
+.about-section {
+  margin-top: 120px; /* This creates the large gap between the two sections */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  background-color: #FCEF91;
+  font-family: sans-serif;
+  gap: 60px;
+}
+ 
+.about-section, .leader-section, .support-council, .kagawad-marquee {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.reveal-left {
+    transform: translateX(-60px);
+}
+
+.reveal-right {
+    transform: translateX(60px);
+}
+
+.reveal-up {
+    transform: translateY(60px);
+}
+
+.active-scroll {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+
+/* Ensure the top section doesn't feel cramped */
+.testimonial-section {
+  padding-bottom: 60px;
+}
+}
+
+/* Center Column Styling */
+.content-center {
+  flex: 1;
+  max-width: 550px;
+  text-align: left;
+}
+
+.content-center h1 {
+  font-size: 56px;
+  margin: 0 0 30px 0;
+  line-height: 1.1;
+  color: #E6521F;
+}
+
+.content-center p {
+  color: black;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Photo Styling - Pure Pictures with Shadow */
+.side-image {
+  flex: 0 0 auto;
+  background: white;
+  padding: 12px; /* White frame around the "pure picture" */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08); /* Soft depth instead of border */
+}
+
+.side-image img {
+  display: block;
+  width: 320px; /* Adjust size based on your images */
+  height: auto;
+}
+
+/* Thematic Tilt */
+.image-left {
+  transform: rotate(-2deg);
+}
+
+.image-right {
+  transform: rotate(2deg);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-center {
+    text-align: center;
+    order: -1; /* Puts text at the top on small screens */
+  }
+}
+footer {
+    text-align: center;
+    background-color: #2b2b2b;
+    color: #E8E8E8;
+}
+
+#FBaranggay {
+    padding: 0px;
+    margin: 0px;
+}
+
+#Santol {
+    padding: 0px;
+    margin: 0px;
+}
+
+#loc {
+    padding: 0px;
+    margin: 0px;
+    font-size: 17px
+}
+
+#desc {
+    font-size: 13px
+}
+
+.icons {
+    height: 30px
+} 
+</style>
+
+
+<section class="leader-section reveal-left">
+  <div class="side-image image-left">
+    <img src="S1.png" alt="Barangay Captain">
+  </div>
+
+  <div class="content-center">
+    <span class="badge-blue">Barangay Captain</span>
+    <h1>Hon. Anacleto C. De Torres</h1>
+    <p>Leading our community with <u>integrity</u>, <u>transparency</u>, and <u>dedication</u>. Together, we continue to grow and protect our barangay for every family.</p>
+  </div>
+</section>
+
+<div class="council-background">
+
+  <section class="kagawad-marquee reveal-right">
+    <h2 class="section-title">The Sangguniang Barangay Members</h2>
+    <div class="marquee-viewport">
+      <div class="marquee-track">
+       
+      
+      <div class="council-card"><div class="circle kag-1"></div><h3>Kag. Ramoncito M. Medina</h3><p>Health Committee</p></div>
+      <div class="council-card"><div class="circle kag-2"></div><h3>Kag. Raquel G. Pangilagan</h3><p>Education</p></div>
+      <div class="council-card"><div class="circle kag-3"></div><h3>Kag. Bilibert N. Juson</h3><p>Security</p></div>
+      <div class="council-card"><div class="circle kag-4"></div><h3>Kag. Maricone L. Borja</h3><p>Infrastructure</p></div>
+      <div class="council-card"><div class="circle kag-5"></div><h3>Kag. Edmundo T. Cruz</h3><p>Finance</p></div>
+      <div class="council-card"><div class="circle kag-6"></div><h3>Kag. Danilo Y. Sakay</h3><p>Environment</p></div>
+      <div class="council-card"><div class="circle kag-7"></div><h3>Kag. Julieta T. Perez</h3><p>Livelihood</p></div>
+
+      <div class="council-card"><div class="circle kag-1"></div><h3>Kag. Ramoncito M. Medina</h3><p>Health Committee</p></div>
+      <div class="council-card"><div class="circle kag-2"></div><h3>Kag. Raquel G. Pangilagan</h3><p>Education</p></div>
+      <div class="council-card"><div class="circle kag-3"></div><h3>Kag. Bilibert N. Juson</h3><p>Security</p></div>
+      <div class="council-card"><div class="circle kag-4"></div><h3>Kag. Maricone L. Borja</h3><p>Infrastructure</p></div>
+      <div class="council-card"><div class="circle kag-5"></div><h3>Kag. Edmundo T. Cruz</h3><p>Finance</p></div>
+      <div class="council-card"><div class="circle kag-6"></div><h3>Kag. Danilo Y. Sakay</h3><p>Environment</p></div>
+      <div class="council-card"><div class="circle kag-7"></div><h3>Kag. Julieta T. Perez</h3><p>Livelihood</p></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="support-council reveal-right">
+  <div class="support-grid">
+    <div class="support-card">
+      <div class="photo-square member-sec"></div> <h4>Secretary</h4>
+      <p>Jofre A. Doguran</p>
+    </div>
+    <div class="support-card">
+      <div class="photo-square member-treas"></div> <h4>Treasurer</h4>
+      <p>Rosanna C. Progueras</p>
+    </div>
+    <div class="support-card">
+      <div class="photo-square member-sk"></div> <h4>SK Chairperson</h4>
+      <p>Christine Jewel D. Dacillo</p>
+    </div>
+  </div>
+</section>
+
+
+<style>/* General Space between sections */
+section { margin-bottom: 100px; font-family: sans-serif; }
+
+/* Captain Section Styles */
+.leader-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px;
+}
+
+.badge-blue {
+  background-color: #EA2F14;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.side-image {
+  background: #FB9E3A;
+  padding: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transform: rotate(-3deg);
+}
+
+.side-image img { width: 350px; display: block; }
+
+/* Marquee Styles */
+.section-title { text-align: center; font-size: 32px; margin-bottom: 40px; }
+
+.marquee-viewport { overflow: hidden; width: 100%; }
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.council-card {
+  width: 220px;
+  text-align: center;
+  background: #E6521F;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.council-background {
+  background-color: #FCEF91; /* A very light, professional grey */
+  padding: 80px 0;           /* Adds space at the top and bottom of the color block */
+  margin-top: 50px;          /* Separation from the Captain's section */
+  color: #ffffff;
+}
+
+/* Ensure sections inside don't have their own conflicting margins */
+.kagawad-marquee, 
+.support-council {
+  margin-bottom: 0; 
+  padding: 40px 0;
+}
+
+/* Keep the cards white so they "pop" off the grey background */
+.council-card, 
+.support-card {
+  background: #E6521F !important; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Soft depth */
+}
+
+.section-title {
+  margin-top: 0;
+  font-size: 36px;
+  color: #333;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  /* Soft shadow for depth */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+/* Add your photo links here */
+.kag-1 { background-image: url('S2.png'); }
+.kag-2 { background-image: url('S3.png'); }
+.kag-3 { background-image: url('S4.png'); }
+.kag-4 { background-image: url('S5.png'); }
+.kag-5 { background-image: url('S6.png'); }
+.kag-6 { background-image: url('S7.png'); }
+.kag-7 { background-image: url('S8.png'); }
+/* ... and so on for all 7 */
+
+/* Support Grid Styles */
+.support-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.support-card {
+  background: #FB9E3A;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Styling for the square photo boxes */
+.photo-square {
+  width: 100%;
+  aspect-ratio: 1; /* Keeps it a perfect square */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow instead of border */
+}
+
+/* Putting the actual images here */
+.member-sec { background-image: url('S10.png'); }
+.member-treas { background-image: url('S11.png'); }
+.member-sk { background-image: url('S9.png'); }
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.sample{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+<div class="sample">
+  <div class="history-card">
+    <h1>Historical Background</h1>
+    <p>
+        Barangay Santol is one of the 38 barangays in the fourth District of Quezon City,
+        Metro Manila. It has a total land area of 43.6847 hectares.<br><br>
+
+        It was created in the late 1950s and was part of a vast tract of land allegedly
+        owned by the original residents (Araneta/Tuason) holding fortified Spanish titles.<br><br>
+
+        In 1953, a portion of the area was named “Santol Bukid,” and its boundaries were
+        defined in the early 1960s as part of Galas, Quezon City.<br><br>
+
+        In 1957, Tuason Estate administered by the Aranetas emerged as the landowner and
+        began subdividing the land and selling it to present residents. The court’s final
+        decision recognized this ownership up to the present time.<br><br>
+
+        In 1958, Santol Bukid became “Araneta Subdivision.” In 1975, all barrios were
+        officially converted into barangays under Presidential Decree Nos. 86 and 210.
+    </p>
+</div>
+</div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+/* MAIN CARD */
+.history-card {
+    max-width: 900px;
+    width: 100%;
+    background-color: #493f3f;
+    color: white;
+    padding: 70px 65px;
+    border-radius: 22px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    animation: fadeUp 1.2s ease forwards;
+
+}
+
+/* TITLE */
+.history-card h1 {
+    font-size: 42px;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+/* TEXT */
+.history-card p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #dddddd;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .history-card {
+        padding: 45px 30px;
+    }
+
+    .history-card h1 {
+        font-size: 30px;
+    }
+
+    .history-card p {
+        font-size: 16px;
+    }
+}
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* ===== TABS ===== */
+.tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
+
+.tab {
+    cursor: pointer;
+    background-color: #e7e4db;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #555;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease;
+}
+
+.card-image {
+    height: 70px;
+}
+
+.v1 { background: linear-gradient(135deg, #E6521F, #EA2F14); }
+.v2 { background: linear-gradient(135deg, #E6521F, #EA2F14); }
+.v3 { background: linear-gradient(135deg, #E6521F, #EA2F14); }
+
+.card-content {
+    padding: 24px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.sample{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.NIP{
+    color:#1d1d1d;
+}
+</style>
+</head>
+
+
+<div class="sample">
+  <div class="container">
+
+    <!-- TABS -->
+    <div class="tabs">
+        <div class="tab active" data-tab="vision">Vision</div>
+        <div class="tab" data-tab="mission">Mission</div>
+        <div class="tab" data-tab="goals">Goals & Objectives</div>
+    </div>
+
+    <!-- VISION -->
+    <div class="content" id="vision">
+        <div class="card">
+            <div class="card-image v1"></div>
+            <div class="card-content">
+                <h3 class="subtitle">Barangay Vision</h3>
+                <p class="subtitle">Barangay Santol is a progressive barangay with a high level of
+                    responsive government maintaining a progressive way of living
+                    and a secured community.</p>
+                <p class="NIP">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MISSION -->
+    <div class="content" id="mission" hidden>
+        <div class="card">
+            <div class="card-image v2"></div>
+            <div class="card-content">
+                <h3 class="subtitle">Barangay Mission</h3>
+                <p class="subtitle">To ensure continuous interactions and participation among its
+                    inhabitants with smooth simplified procedures and systems
+                    towards social and prospective development of the Barangay
+                    Government.</p>
+                <p class="NIP">
+                
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GOALS -->
+    <div class="content" id="goals" hidden>
+        <div class="card">
+            <div class="card-image v3"></div>
+            <div class="card-content">
+                <h3 class="subtitle">Barangay Goals and Objectives</h3>
+                <p class="subtitle">To promote livelihood programs, job opportunities, social
+                    development, and healthcare services to ensure a safe, happy,
+                    and economically productive community.</p>
+                <p class="NIP">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+<script>
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.content');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.hidden = true);
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).hidden = false;
+    });
+});
+</script>
+
+<script>
+  // Create the observer
+  const observerOptions = {
+    threshold: 0.15 // Triggers when 15% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add the class that triggers the CSS transition
+        entry.target.classList.add('active-scroll');
+        // Optional: stop watching once it has animated once
+        // observer.unobserve(entry.target); 
+      }
+    });
+  }, observerOptions);
+
+  // Tell the observer which elements to watch
+  const elementsToAnimate = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up');
+  elementsToAnimate.forEach(el => observer.observe(el));
+</script>
+
+
+
+</body>
+</html>

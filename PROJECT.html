@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMS</title>
+    <link rel="stylesheet" href="BUILDING.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+    <div class="logo">IHMCI</div>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Services</a>
+      <a href="#">Reviews</a>
+    </div>
+
+    <!-- CIRCULAR IMAGE ICONS -->
+    <div class="nav-icons">
+      <div class="icon-circle">
+        <img src="Bagong Pinas.png" alt="">
+      </div>
+      <div class="icon-circle">
+        <img src="Santol.png" alt="">
+      </div>
+    </div>
+  </div></header>
+<section class="locations-section">
+    <div class="header-container">
+        <div>
+            <span >
+                <h1>PROJECTS</h1>
+            <p class="subtitle">Real-time updates on ongoing projects.</p>
+            </span>
+        
+
+    <div class="cards-grid">
+        <div class="location-card">
+            <div class="image-box" style="background-image: url('ROAD.png');"></div>
+            <div class="info-content">
+                <h3>Road Improvement</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book. It has survived not 
+                      only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged.</p>
+            </div>
+            <a href=""class="btn-order"><button class="btn-order">View Details</button></a>
+        </div>
+
+        <div class="location-card">
+            <div class="image-box" style="background-image: url('CCTV.jfif');"></div>
+            <div class="info-content">
+                <h3>CCTV Installation Project</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book. It has survived not 
+                      only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged.</p>
+            </div>
+            <a href=""class="btn-order"><button class="btn-order">View Details</button></a>
+        </div>
+
+        <div class="location-card">
+            <div class="image-box" style="background-image: url('CLEAN.jpg');"></div>
+            <div class="info-content">
+                <h3>Community Clean-Up Drive</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                     ever since the 1500s, when an unknown printer took a galley of type
+                      and scrambled it to make a type specimen book. It has survived not 
+                      only five centuries, but also the leap into electronic typesetting, 
+                      remaining essentially unchanged.</p>
+            </div>
+            <a href=""class="btn-order"><button class="btn-order">View Details</button></a>
+        </div>
+    </div>
+</section>
+<footer>
+        <div width="60%">
+            <h2 id="Santol">Barangay Santol</h2>
+            <p id="loc">Quezon City, Metro Manila, Philippines</p>
+            <hr width="80%" />
+            <p id="desc">
+                Barangay Santol is a community where neighbors know each other and work together to keep the area safe and peaceful.<br />
+                It’s a great neighborhood filled with friendly people, helpful leaders, and a strong sense of unity. In this barangay,
+                everyone contributes<br /> to making the place clean, organized, and welcoming for families and visitors. It’s a community<br />
+                where cooperation and care make daily life better for everyone.
+            </p>
+
+        </div>
+        <a href="https://www.facebook.com/profile.php?id=61578939367600#"><img src="Fb.png" alt="Facebook Page" class="icons" /></a>
+        <a href=""><img src="IG.png" alt="Instagram Page" class="icons" /></a>
+        <a href=""><img src="Contact.png" alt="Contact No." class="icons" /></a>
+    </footer>
+
+
+<style>
+    .navbar {
+      background-color: #FB9E3A;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    /* CIRCLE IMAGE ICONS */
+    .nav-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 70%;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    .icon-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+body {
+    background-color: #FEF3E2; /* The red from your image */
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+
+@keyframes PROJECT {
+    from{
+        transform:translateX(0) :
+    }
+    to{
+        transform:translateX(20px) ;
+    }
+}
+.locations-section {
+    padding: 50px 5%;
+    padding-top:10px;
+    animation-name: PROJECT;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    color: #B03030;
+}
+
+h1 { font-size: 3rem; margin: 0; letter-spacing: -1px; }
+.subtitle { font-size: 1.5rem; margin: 0; font-weight: normal; }
+
+.btn-all {
+    background-color: #f9ca24;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 30px;
+    margin-top:50px;    
+    justify-content: center;
+}
+
+.location-card {
+    background: white;
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.image-box {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-content {
+    padding: 20px;
+    flex-grow: 1;
+    color: #333;
+}
+.info-content p{
+    font-size:12px;
+}
+
+.info-content h3 { margin-top: 0; color: #d63031; border-bottom: 2px solid #eee; padding-bottom: 5px;}
+
+.btn-order {
+    background-color: #E6B85C; 
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    background-color: #e7ab32;
+}
+footer {
+    text-align: center;
+    background-color: #2b2b2b;
+    color: #E8E8E8;
+}
+
+#FBaranggay {
+    padding: 0px;
+    margin: 0px;
+}
+
+#Santol {
+    padding: 0px;
+    margin: 0px;
+}
+
+#loc {
+    padding: 0px;
+    margin: 0px;
+    font-size: 17px
+}
+
+#desc {
+    font-size: 13px
+}
+
+.icons {
+    height: 30px
+}
+</style>
+
+</body>
+</html>

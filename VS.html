@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barangay Santol – History</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f2f2f2, #fafafa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* MAIN CARD */
+.history-card {
+    max-width: 900px;
+    width: 100%;
+    background-color: #493f3f;
+    color: white;
+    padding: 70px 65px;
+    border-radius: 22px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    animation: fadeUp 1.2s ease forwards;
+}
+
+/* TITLE */
+.history-card h1 {
+    font-size: 42px;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+/* TEXT */
+.history-card p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #dddddd;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .history-card {
+        padding: 45px 30px;
+    }
+
+    .history-card h1 {
+        font-size: 30px;
+    }
+
+    .history-card p {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="history-card">
+    <h1>Historical Background</h1>
+    <p>
+        Barangay Santol is one of the 38 barangays in the fourth District of Quezon City,
+        Metro Manila. It has a total land area of 43.6847 hectares.<br><br>
+
+        It was created in the late 1950s and was part of a vast tract of land allegedly
+        owned by the original residents (Araneta/Tuason) holding fortified Spanish titles.<br><br>
+
+        In 1953, a portion of the area was named “Santol Bukid,” and its boundaries were
+        defined in the early 1960s as part of Galas, Quezon City.<br><br>
+
+        In 1957, Tuason Estate administered by the Aranetas emerged as the landowner and
+        began subdividing the land and selling it to present residents. The court’s final
+        decision recognized this ownership up to the present time.<br><br>
+
+        In 1958, Santol Bukid became “Araneta Subdivision.” In 1975, all barrios were
+        officially converted into barangays under Presidential Decree Nos. 86 and 210.
+    </p>
+</div>
+
+</body>
+</html>
