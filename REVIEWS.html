@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+      padding-top: 80px;
+      font-family: 'Arial Black';
+      background:#FFE08F;
+      color:#1a1a1a;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color: #FB9E3A;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      position: relative;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-links a:hover {
+      transform: translateY(-3px);
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* CIRCLE IMAGE ICONS */
+    .nav-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    .icon-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    :root{
+      --accent:#FB9E3A;
+      --dark:#1a1a1a;
+      --glass:rgba(255,255,255,0.25);
+    }
+
+    /* SECTION */
+    .contact{
+      padding:90px 8%;
+    }
+
+    /* GRID */
+    .container{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+    }
+
+    /* GLASS CARD */
+    .card{
+      background:var(--glass);
+      backdrop-filter: blur(12px);
+      border-radius:24px;
+      padding:45px;
+      border:1px solid rgba(255,255,255,0.4);
+      transition:.4s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 30px 60px rgba(0,0,0,.15);
+    }
+
+    h2{ font-size:44px; margin:12px 0 20px; }
+    .tag{ font-size:12px; letter-spacing:3px; font-weight:600; color:var(--accent); }
+
+    /* FORM INPUTS */
+    input, textarea {
+      background: rgba(255,255,255,.85);
+      border: none;
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+      outline: none;
+      transition: .3s;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .row { display: flex; gap: 18px; }
+
+    button {
+      margin-top: 10px;
+      width: 190px;
+      padding: 14px;
+      border: none;
+      border-radius: 40px;
+      background: linear-gradient(135deg,#FB9E3A,#ffb865);
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+      transition: .35s;
+    }
+
+    @media(max-width:900px){ .container{ grid-template-columns:1fr; } }
+</style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="logo">IHMCI</div>
+    <div class="nav-links">
+      <a href="HOME.html">Home</a>
+      <a href="PROGRAMS 2.html">Projects</a>
+      <a href="BUILDINGS.html">Services</a>
+      <a href="REVIEWS.html">Reviews</a>
+    </div>
+    <div class="nav-icons">
+      <div class="icon-circle"><img src="Bagong Pinas.png" alt=""></div>
+      <div class="icon-circle"><img src="Santol.png" alt=""></div>
+    </div>
+  </div>
+
+<section class="contact">
+  <div class="container">
+
+    <div class="card info" data-aos="fade-right">
+      <span class="tag">KEEP CLOSE</span>
+      <h2>Get in Touch</h2>
+      <p>Reach out to us for inquiries, concerns, or feedback. We’d love to hear from you.</p>
+      <ul style="list-style:none;">
+        <li>📍 60 Silencio Street, Santol, District IV, Quezon City</li>
+        <li>📞 8713-1928</li>
+        <li>⏰ 8:00 AM – 5:00 PM</li>
+        <li>✉ barangaysantol2023@gmail.com</li>
+      </ul>
+      <div style="margin-top:20px;">
+        <span style="display:block; font-weight:600; margin-bottom:10px;">Follow Us</span>
+        <a href="https://www.facebook.com/profile.php?id=61578939367600" target="_blank" style="background:#1877F2; color:white; padding:10px 15px; border-radius:50%; text-decoration:none;">f</a>
+      </div>
+    </div>
+
+    <div class="card form" data-aos="fade-left">
+      <h3>Your Details</h3>
+      <p>Let us know and hear from you.</p>
+
+      <form id="contactForm" action="https://api.sheetmonkey.io/form/bDUHeG158vXbYGhfHTGkcY" method="POST">
+        <div class="row">
+          <input type="text" name="Name" placeholder="Name" required>
+          <input type="email" name="Email" placeholder="Email Address" required>
+        </div>
+
+        <input type="text" name="Subject" placeholder="Subject">
+        <textarea name="Message" placeholder="Comments / Questions" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({duration:1200,once:true});
+
+  // This handles the user experience when clicking the button
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function() {
+      alert("✅ Success! Your message is being sent to our Google Sheet.");
+  });
+</script>
+
+</body>
+</html>
